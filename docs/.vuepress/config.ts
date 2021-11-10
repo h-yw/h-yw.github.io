@@ -6,7 +6,7 @@ module.exports = {
   title: "Mr.Hou",
   description: "Mr.Hou",
   base: "/",
-  theme: path.resolve(__dirname, "./theme"),
+  theme: "@vuepress/theme-default",
   head: [
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
