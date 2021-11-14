@@ -1,7 +1,6 @@
 module.exports = {
     title: "Mr.Hou",
     description: "Just playing around",
-    theme: "@vuepress/theme-blog",
     themeConfig: {
         dateFormat: "YYYY-MM-DD",
         nav: [{
