@@ -1,13 +1,9 @@
 {
-  "name": "hblog",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://gitee.com/mr_houyw/hblog.git",
-  "author": "moon.H <1327603193@qq.com>",
-  "license": "MIT",
+  "description": "",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.3.0",
