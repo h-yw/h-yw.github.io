@@ -6,7 +6,7 @@ module.exports = {
   title: "Mr.Hou",
   description: "Mr.Hou",
   base: "/",
-  theme: "@vuepress/theme-default",
+  theme:path.resolve(__dirname,'./theme'),
   head: [
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
@@ -30,7 +30,8 @@ module.exports = {
       {
         componentsDir: path.resolve(__dirname, './docs/.vuepress/theme/components'),
       }
-    ], [
+    ],
+     [
       '@vuepress/plugin-search',
       {
         locales: {
@@ -53,6 +54,9 @@ module.exports = {
         preloadLanguages: ['markdown', 'javascript', 'bash']
       }
     ]
+    // [
+    //   '@vuepress/blog'
+    // ]
   ],
   // 主题配置
   themeConfig: {
@@ -63,11 +67,12 @@ module.exports = {
       },
       {
         text: "技术",
-        link: "/Tech.md",
+        link: "/tech",
       },
       {
         text: "Life",
-        link: "/Life.md",
+        dirname: "_life",
+        link: "/生活",
       },
       {
         text: "关于",

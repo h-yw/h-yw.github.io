@@ -1,9 +1,12 @@
-const {path} = require('@vuepress/utils')
+import type { ThemeObject } from '@vuepress/core'
+import { path } from '@vuepress/utils'
 
-module.exports = {
-    name: 'vuepress-theme-hou',
-    extends: '@vuepress/theme-default',
-    layouts:{
-        Layout: path.resolve(__dirname, 'layouts/Layout.vue')
-    }
+const localTheme: ThemeObject = {
+  name: 'vuepress-theme-hou',
+  extends: '@vuepress/theme-default',
+  layouts: {
+    Layout: path.resolve(__dirname, 'layouts/Layout.vue'),
+  },
 }
+
+export default localTheme

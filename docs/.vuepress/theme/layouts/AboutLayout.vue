@@ -2,8 +2,8 @@
 // import "tailwindcss/tailwind.css"
 import Layout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
 import {usePageFrontmatter} from '@vuepress/client'
-let f= usePageFrontmatter()
-console.log(f.value.heroAlt);
+let frontmatter= usePageFrontmatter().value
+console.log(frontmatter);
 
 </script>
 <template>
