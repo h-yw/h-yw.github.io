@@ -1,33 +1,33 @@
 module.exports = {
     title: "Mr.Hou",
     description: "Just playing around",
+    nav: [{
+        text: "首页",
+        link: "/"
+    },
+    {
+        text: "技术",
+        link: "/tech/"
+    },
+    {
+        text: "生活",
+        link: "/life/"
+    },
+    {
+        text: "Tags",
+        link: "/tag/"
+    },
+    {
+        text: "关于",
+        link: "/about.md"
+    },
+    {
+        text: "Github",
+        link: "https://github.com/h-yw"
+    },
+    ],
     themeConfig: {
         dateFormat: "YYYY-MM-DD",
-        nav: [{
-            text: "首页",
-            link: "/"
-        },
-        {
-            text: "技术",
-            link: "/tech/"
-        },
-        {
-            text: "生活",
-            link: "/life/"
-        },
-        {
-            text: "Tags",
-            link: "/tag/"
-        },
-        {
-            text: "关于",
-            link: "/about.md"
-        },
-        {
-            text: "Github",
-            link: "https://github.com/h-yw"
-        },
-        ],
         footer: {
             contact: [{
                 type: "github",
