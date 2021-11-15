@@ -1,7 +1,15 @@
 module.exports = {
+    base:'/',
     title: "Mr.Hou",
-    description: "Just playing around",
-    nav: [{
+    description: "一方世界",
+    head: [
+        ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+        ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+        ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
+        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }]
+    ],
+    navbar: [{
         text: "首页",
         link: "/"
     },
@@ -27,71 +35,34 @@ module.exports = {
     },
     ],
     themeConfig: {
-        dateFormat: "YYYY-MM-DD",
-        footer: {
-            contact: [{
-                type: "github",
-                link: "https://github.com/h-yw",
-            },],
-            copyright: [{
-                text: "MIT Licensed | Copyright © 2020 Mr.Hou",
-            },],
-        },
-        directories: [{
-            id: "post",
-            dirname: "_posts",
-            path: "/",
-            itemPermalink: "/:year/:month/:slug",
-            itemPermalinkFlat: "/:slug",
-            order: 1,
-        },
-        {
-            id: "life",
-            dirname: "_life",
-            path: "/life/",
-            title: "生活",
-            itemPermalink: "/life/:year/:month/:slug",
-            itemPermalinkFlat: "/life/:slug",
-            order: 2,
-        },
-        {
-            id: "tech",
-            dirname: "_tech",
-            path: "/tech/",
-            title: "技术",
-            itemPermalink: "/tech/:year/:month/:slug",
-            itemPermalinkFlat: "/tech/:slug",
-            order: 3,
-        },
-        {
-            id: "tag",
-            dirname: "_tags",
-            path: "/tag/",
-            title: "标签",
-            itemPermalink: "/tag/:year/:month/:slug",
-            itemPermalinkFlat: "/tag/:slug",
-            order: 4,
-        },
-        {
-            id: "about",
-            dirname: "about",
-            path: "/about.md",
-            title: "关于",
-            order: 5,
-        },
-        ],
-        globalPagination: {
-            prevText: "上一页",
-            nextText: "下一页",
-            lengthPerPage: 5,
-            pageGap: 1,
-        },
-        paginationComponent: "Pagination",
-        summary: true,
-        summaryLength: 120,
-        smoothScroll: true,
-        lastUpdated: "最近写的吧...",
+        logo:'https://vuejs.org/images/logo.png',
+        darkMode: true,
+        repo:'https://github.com/h-yw/h-yw.github.io',
+        repoLabel: 'Github',
         sidebar: "auto",
+        editLink: true,
+        editLinkText:'不会还要改吧？',
+        docsRepo: 'https://github.com/h-yw/h-yw.github.io',
+        docsBranch: 'master',
+        docsDir: 'blog',
+        editLinkPattern: ':repo/edit/:branch/:path',
+        lastUpdated: true,
+        lastUpdatedText: '最近改的',
+        contributors: true,
+        contributorsText: '作者',
+        notFound: ['404,是去了另一个星球吧...'],
+        backToHome: '停下来，回去吧。',
+        openInNewWindow: '打开新天地吧！',
+        toggleDarkMode: '切换色彩模式',
+        toggleSidebar: '切换侧边栏',
+        dateFormat: "YYYY-MM-DD",
+        themePlugins: {
+            activeHeaderLinks: true,
+            backToTop: true,
+            git: true,
+            mediumZoom: true,
+            nprogress: true
+        }
         /*         comment: {
                     service: "vssue",
                     owner: "h-yw",
@@ -109,26 +80,5 @@ module.exports = {
                     autoCreateBranch: true,
                 } */
 
-    },
-    plugins: [
-        "@vuepress/container"
-    ],
-    markdown: {
-        lineNumbers: true,
-        toc: {
-            includeLevel: [2, 3]
-        },
-        anchor: {
-            permalink: true,
-            permalinkBefore: true,
-            permalinkSymbol: "⚓",
-        }
-    },
-    // configureWebpack: {
-    //     resolve: {
-    //         alias: {
-    //             '@img': 'public'
-    //         }
-    //     }
-    // }
+    }
 };
