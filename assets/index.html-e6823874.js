@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-790141f7","path":"/crazy/","title":"狂想","lang":"zh-CN","frontmatter":{"title":"狂想"},"headers":[],"git":{"updatedTime":1677407899000},"filePathRelative":"crazy/README.md"}');export{t as data};
